@@ -28,3 +28,12 @@ var View = Backbone.View.extend({
   }
 });
 ```
+### Additional methods
+`this.messageToSource(object):` Because EventSource is one directional (from server to client), we need a way to respond to the server (or not). If you do, this function makes a jquery POST to the eventSourceURL. It should take one argument, an object with all your data in it. It will return with a jquery promise.
+
+`onEventSourceConnected` Add this into your view for when a connection is made to the EventSource.
+
+`onEventSourceDisconnected` Add this into your view for when you are disconnected from the EventSource.
+
+### Examples
+See examples folder to see how the client and server could work (and keep in mind, the server can be anything you want, I chose node for simplicity).

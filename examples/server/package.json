@@ -7,6 +7,7 @@
   "devDependencies": {
     "sse": "0.0.5",
     "express": "~3.4.8",
-    "connect-sse": "~1.0.5"
+    "connect-sse": "~1.0.5",
+    "fibers": "~1.0.1"
   }
 }
