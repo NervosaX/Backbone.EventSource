@@ -1,0 +1,12 @@
+{
+  "name": "backbone-sse-server-example",
+  "version": "0.0.1",
+  "description": "Test server for Backbone SSE",
+  "main": "server.js",
+  "author": "Adam Hoddinott",
+  "devDependencies": {
+    "sse": "0.0.5",
+    "express": "~3.4.8",
+    "connect-sse": "~1.0.5"
+  }
+}

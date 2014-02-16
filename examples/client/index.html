@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Backbone EventSource example</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <script id="content-template" type="backbone/template">
+            Server response count: <%= count %>
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="content"></div>
+
+        <!-- Backbone and its requirements -->
+        <script src="lib/underscore.min.js"></script>
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/backbone.min.js"></script>
+
+        <!-- Backbone.beamer for easy extensions -->
+        <script src="lib/backbone.beamer.js"></script>
+
+        <!-- Backbone sse for  -->
+        <script src="../../lib/backbone.eventsource.js"></script>
+        <script src="client.js"></script>
+    </body>
+</html>
